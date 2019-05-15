@@ -20,20 +20,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        canvasView.backgroundImage = #imageLiteral(resourceName: "default_bg.png")
+        canvasView.backgroundImage = #imageLiteral(resourceName: "IMG_0682")
     }
 
 
     @IBAction func drawAction(_ sender: UIBarButtonItem) {
         canvasView.isErase = false
         brushItem.tintColor = .red
-        eraserItem.tintColor = .blue
+        eraserItem.tintColor = nil
     }
     
     @IBAction func eraserAction(_ sender: UIBarButtonItem) {
         canvasView.isErase = true
         eraserItem.tintColor = .red
-        brushItem.tintColor = .blue
+        brushItem.tintColor = nil
     }
     
     @IBAction func undoAction(_ sender: UIBarButtonItem) {
