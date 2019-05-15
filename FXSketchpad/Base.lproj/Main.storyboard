@@ -61,6 +61,12 @@
                                             <action selector="eraserAction:" destination="BYZ-38-t0r" id="cZf-Uv-ihN"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rWZ-eR-gsm"/>
+                                    <barButtonItem title="保存" id="dvJ-Ak-iLp">
+                                        <connections>
+                                            <action selector="saveAction:" destination="BYZ-38-t0r" id="8bR-uz-u4d"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1xP-fW-YlV">

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class ViewController: UIViewController {
 
@@ -50,6 +51,34 @@ class ViewController: UIViewController {
     
     @IBAction func lineWidthValueChanged(_ sender: UISlider) {
         canvasView.lineWidth = CGFloat(sender.value)
+    }
+    
+    @IBAction func saveAction(_ sender: UIBarButtonItem) {
+        guard let image = canvasView.exportToImage() else { return }
+        
+        /*
+         info.plist
+         <key>NSPhotoLibraryUsageDescription</key>
+         <string>App需要访问相册</string>
+        */
+        PHPhotoLibrary.requestAuthorization { (status) in
+            if status == .authorized {
+                
+                PHPhotoLibrary.shared().performChanges({
+                    PHAssetChangeRequest.creationRequestForAsset(from: image)
+                }) { (isSuccess, aError) in
+                    if aError == nil {
+                        print("保存成功")
+                    }else {
+                        print("保存失败")
+                    }
+                }
+                
+            }else {
+                print("未授权访问相册")
+            }
+        }
+        
     }
     
     
