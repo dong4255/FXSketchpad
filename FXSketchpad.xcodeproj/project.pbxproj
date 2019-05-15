@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F584A475228AAE940089606B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A474228AAE940089606B /* AppDelegate.swift */; };
+		F584A477228AAE940089606B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A476228AAE940089606B /* ViewController.swift */; };
+		F584A47A228AAE940089606B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F584A478228AAE940089606B /* Main.storyboard */; };
+		F584A47C228AAE960089606B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F584A47B228AAE960089606B /* Assets.xcassets */; };
+		F584A47F228AAE960089606B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F584A47D228AAE960089606B /* LaunchScreen.storyboard */; };
+		F584A48A228AAE960089606B /* FXSketchpadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A489228AAE960089606B /* FXSketchpadTests.swift */; };
+		F584A495228AAE960089606B /* FXSketchpadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A494228AAE960089606B /* FXSketchpadUITests.swift */; };
+		F584A4A5228AAF960089606B /* FXSketchpadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A4A4228AAF960089606B /* FXSketchpadProtocol.swift */; };
+		F584A4A9228AB61E0089606B /* FXDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584A4A8228AB61E0089606B /* FXDrawView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F584A486228AAE960089606B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F584A469228AAE940089606B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F584A470228AAE940089606B;
+			remoteInfo = FXSketchpad;
+		};
+		F584A491228AAE960089606B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F584A469228AAE940089606B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F584A470228AAE940089606B;
+			remoteInfo = FXSketchpad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F584A471228AAE940089606B /* FXSketchpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXSketchpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F584A474228AAE940089606B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F584A476228AAE940089606B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F584A479228AAE940089606B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F584A47B228AAE960089606B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F584A47E228AAE960089606B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F584A480228AAE960089606B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F584A485228AAE960089606B /* FXSketchpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXSketchpadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F584A489228AAE960089606B /* FXSketchpadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXSketchpadTests.swift; sourceTree = "<group>"; };
+		F584A48B228AAE960089606B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F584A490228AAE960089606B /* FXSketchpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXSketchpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F584A494228AAE960089606B /* FXSketchpadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXSketchpadUITests.swift; sourceTree = "<group>"; };
+		F584A496228AAE960089606B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F584A4A4228AAF960089606B /* FXSketchpadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXSketchpadProtocol.swift; sourceTree = "<group>"; };
+		F584A4A8228AB61E0089606B /* FXDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXDrawView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F584A46E228AAE940089606B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A482228AAE960089606B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A48D228AAE960089606B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F584A468228AAE940089606B = {
+			isa = PBXGroup;
+			children = (
+				F584A473228AAE940089606B /* FXSketchpad */,
+				F584A488228AAE960089606B /* FXSketchpadTests */,
+				F584A493228AAE960089606B /* FXSketchpadUITests */,
+				F584A472228AAE940089606B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F584A472228AAE940089606B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F584A471228AAE940089606B /* FXSketchpad.app */,
+				F584A485228AAE960089606B /* FXSketchpadTests.xctest */,
+				F584A490228AAE960089606B /* FXSketchpadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F584A473228AAE940089606B /* FXSketchpad */ = {
+			isa = PBXGroup;
+			children = (
+				F584A474228AAE940089606B /* AppDelegate.swift */,
+				F584A476228AAE940089606B /* ViewController.swift */,
+				F584A4A2228AAEB30089606B /* Sketchpad */,
+				F584A478228AAE940089606B /* Main.storyboard */,
+				F584A47B228AAE960089606B /* Assets.xcassets */,
+				F584A47D228AAE960089606B /* LaunchScreen.storyboard */,
+				F584A480228AAE960089606B /* Info.plist */,
+			);
+			path = FXSketchpad;
+			sourceTree = "<group>";
+		};
+		F584A488228AAE960089606B /* FXSketchpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				F584A489228AAE960089606B /* FXSketchpadTests.swift */,
+				F584A48B228AAE960089606B /* Info.plist */,
+			);
+			path = FXSketchpadTests;
+			sourceTree = "<group>";
+		};
+		F584A493228AAE960089606B /* FXSketchpadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F584A494228AAE960089606B /* FXSketchpadUITests.swift */,
+				F584A496228AAE960089606B /* Info.plist */,
+			);
+			path = FXSketchpadUITests;
+			sourceTree = "<group>";
+		};
+		F584A4A2228AAEB30089606B /* Sketchpad */ = {
+			isa = PBXGroup;
+			children = (
+				F584A4A4228AAF960089606B /* FXSketchpadProtocol.swift */,
+				F584A4A8228AB61E0089606B /* FXDrawView.swift */,
+			);
+			path = Sketchpad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F584A470228AAE940089606B /* FXSketchpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F584A499228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpad" */;
+			buildPhases = (
+				F584A46D228AAE940089606B /* Sources */,
+				F584A46E228AAE940089606B /* Frameworks */,
+				F584A46F228AAE940089606B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXSketchpad;
+			productName = FXSketchpad;
+			productReference = F584A471228AAE940089606B /* FXSketchpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F584A484228AAE960089606B /* FXSketchpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F584A49C228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpadTests" */;
+			buildPhases = (
+				F584A481228AAE960089606B /* Sources */,
+				F584A482228AAE960089606B /* Frameworks */,
+				F584A483228AAE960089606B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F584A487228AAE960089606B /* PBXTargetDependency */,
+			);
+			name = FXSketchpadTests;
+			productName = FXSketchpadTests;
+			productReference = F584A485228AAE960089606B /* FXSketchpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F584A48F228AAE960089606B /* FXSketchpadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F584A49F228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpadUITests" */;
+			buildPhases = (
+				F584A48C228AAE960089606B /* Sources */,
+				F584A48D228AAE960089606B /* Frameworks */,
+				F584A48E228AAE960089606B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F584A492228AAE960089606B /* PBXTargetDependency */,
+			);
+			name = FXSketchpadUITests;
+			productName = FXSketchpadUITests;
+			productReference = F584A490228AAE960089606B /* FXSketchpadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F584A469228AAE940089606B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = dong;
+				TargetAttributes = {
+					F584A470228AAE940089606B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F584A484228AAE960089606B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F584A470228AAE940089606B;
+					};
+					F584A48F228AAE960089606B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F584A470228AAE940089606B;
+					};
+				};
+			};
+			buildConfigurationList = F584A46C228AAE940089606B /* Build configuration list for PBXProject "FXSketchpad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F584A468228AAE940089606B;
+			productRefGroup = F584A472228AAE940089606B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F584A470228AAE940089606B /* FXSketchpad */,
+				F584A484228AAE960089606B /* FXSketchpadTests */,
+				F584A48F228AAE960089606B /* FXSketchpadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F584A46F228AAE940089606B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584A47F228AAE960089606B /* LaunchScreen.storyboard in Resources */,
+				F584A47C228AAE960089606B /* Assets.xcassets in Resources */,
+				F584A47A228AAE940089606B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A483228AAE960089606B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A48E228AAE960089606B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F584A46D228AAE940089606B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584A477228AAE940089606B /* ViewController.swift in Sources */,
+				F584A4A9228AB61E0089606B /* FXDrawView.swift in Sources */,
+				F584A4A5228AAF960089606B /* FXSketchpadProtocol.swift in Sources */,
+				F584A475228AAE940089606B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A481228AAE960089606B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584A48A228AAE960089606B /* FXSketchpadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F584A48C228AAE960089606B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F584A495228AAE960089606B /* FXSketchpadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F584A487228AAE960089606B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F584A470228AAE940089606B /* FXSketchpad */;
+			targetProxy = F584A486228AAE960089606B /* PBXContainerItemProxy */;
+		};
+		F584A492228AAE960089606B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F584A470228AAE940089606B /* FXSketchpad */;
+			targetProxy = F584A491228AAE960089606B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F584A478228AAE940089606B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F584A479228AAE940089606B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F584A47D228AAE960089606B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F584A47E228AAE960089606B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F584A497228AAE960089606B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F584A498228AAE960089606B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F584A49A228AAE960089606B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GVAHXKD3B;
+				INFOPLIST_FILE = FXSketchpad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F584A49B228AAE960089606B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GVAHXKD3B;
+				INFOPLIST_FILE = FXSketchpad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F584A49D228AAE960089606B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FXSketchpadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FXSketchpad.app/FXSketchpad";
+			};
+			name = Debug;
+		};
+		F584A49E228AAE960089606B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FXSketchpadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FXSketchpad.app/FXSketchpad";
+			};
+			name = Release;
+		};
+		F584A4A0228AAE960089606B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FXSketchpadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FXSketchpad;
+			};
+			name = Debug;
+		};
+		F584A4A1228AAE960089606B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FXSketchpadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.FXSketchpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FXSketchpad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F584A46C228AAE940089606B /* Build configuration list for PBXProject "FXSketchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584A497228AAE960089606B /* Debug */,
+				F584A498228AAE960089606B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F584A499228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584A49A228AAE960089606B /* Debug */,
+				F584A49B228AAE960089606B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F584A49C228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584A49D228AAE960089606B /* Debug */,
+				F584A49E228AAE960089606B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F584A49F228AAE960089606B /* Build configuration list for PBXNativeTarget "FXSketchpadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F584A4A0228AAE960089606B /* Debug */,
+				F584A4A1228AAE960089606B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F584A469228AAE940089606B /* Project object */;
+}

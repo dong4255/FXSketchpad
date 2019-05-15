@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FXSketchpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iKd-or-v9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="fvU-Uy-t6S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-b3-66q" customClass="FXDrawView" customModule="FXSketchpad" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="156" width="414" height="682"/>
+                                <color key="backgroundColor" red="0.99948734049999999" green="0.43374472860000002" blue="0.37860131260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-u0-8Rx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Iod-m7-0gD"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="画笔" id="OyZ-mx-CNP">
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="drawAction:" destination="BYZ-38-t0r" id="0sm-iV-N8H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GzV-N4-uS3"/>
+                                    <barButtonItem title="撤回" id="dV8-zH-BDA">
+                                        <connections>
+                                            <action selector="undoAction:" destination="BYZ-38-t0r" id="NsQ-iZ-I7H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="H4B-ao-0Gq"/>
+                                    <barButtonItem title="还原" id="1DM-Xm-svf">
+                                        <connections>
+                                            <action selector="redoAction:" destination="BYZ-38-t0r" id="SFo-kb-bU2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EOm-es-v12"/>
+                                    <barButtonItem title="清屏" id="ybL-bl-3EY">
+                                        <connections>
+                                            <action selector="cleanAction:" destination="BYZ-38-t0r" id="vXC-uQ-X5x"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FBY-i7-POa"/>
+                                    <barButtonItem title="橡皮擦" id="jsn-Im-j92">
+                                        <connections>
+                                            <action selector="eraserAction:" destination="BYZ-38-t0r" id="cZf-Uv-ihN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1xP-fW-YlV">
+                                <rect key="frame" x="18" y="102" width="378" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rjp-v3-6sW"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="lineWidthValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UIM-rg-XB2"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fvU-Uy-t6S" firstAttribute="top" secondItem="HjS-b3-66q" secondAttribute="bottom" constant="24" id="0iN-JH-mal"/>
+                            <constraint firstAttribute="trailing" secondItem="7zh-u0-8Rx" secondAttribute="trailing" id="5Cz-rF-vjl"/>
+                            <constraint firstItem="HjS-b3-66q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="78a-DF-SUZ"/>
+                            <constraint firstItem="7zh-u0-8Rx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CW5-jq-7tK"/>
+                            <constraint firstItem="1xP-fW-YlV" firstAttribute="top" secondItem="7zh-u0-8Rx" secondAttribute="bottom" constant="14" id="EB2-ig-YG6"/>
+                            <constraint firstItem="1xP-fW-YlV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QWc-w9-5Pp"/>
+                            <constraint firstItem="7zh-u0-8Rx" firstAttribute="top" secondItem="iKd-or-v9c" secondAttribute="bottom" id="ThU-wB-iMS"/>
+                            <constraint firstItem="HjS-b3-66q" firstAttribute="top" secondItem="1xP-fW-YlV" secondAttribute="bottom" constant="24" id="Xzr-SP-c9J"/>
+                            <constraint firstItem="HjS-b3-66q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z81-YE-Ev5"/>
+                            <constraint firstItem="1xP-fW-YlV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dfv-qc-4rY"/>
+                            <constraint firstAttribute="trailing" secondItem="HjS-b3-66q" secondAttribute="trailing" id="e6B-cM-x91"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2vn-Tt-cWU"/>
+                    <connections>
+                        <outlet property="brushItem" destination="OyZ-mx-CNP" id="UGF-O6-Uzk"/>
+                        <outlet property="canvasView" destination="HjS-b3-66q" id="Fmk-xK-YBE"/>
+                        <outlet property="eraserItem" destination="jsn-Im-j92" id="UCM-h9-o7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
