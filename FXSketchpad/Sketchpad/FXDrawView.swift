@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FXDrawView: UIView, FXSketchpadProtocol {
+open class FXDrawView: UIView, FXSketchpadProtocol {
     
     
     /// 路径
@@ -20,7 +20,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
     private var undoLines = [CAShapeLayer]()
     
     /// 线宽
-    public var lineWidth: CGFloat = 3 {
+    open var lineWidth: CGFloat = 3 {
         didSet {
             if lineWidth <= 0 {
                 lineWidth = 3
@@ -29,26 +29,26 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
     }
     
     /// 线条颜色
-    public var lineColor: UIColor = .black
+    open var lineColor: UIColor = .black
     
     /// 线条拐点样式
-    public var lineCapStyle: CGLineCap = .round
+    open var lineCapStyle: CGLineCap = .round
     
     /// 线条头尾样式
-    public var lineJoinStyle: CGLineJoin = .round
+    open var lineJoinStyle: CGLineJoin = .round
     
     /// 橡皮擦
-    public var isErase: Bool = false
+    open var isErase: Bool = false
     
     /// 背景图片
-    public var backgroundImage: UIImage? {
+    open var backgroundImage: UIImage? {
         didSet {
             setBackgroundImage()
         }
     }
     
     /// 清屏
-    public func clean() {
+    open func clean() {
         for line in lines {
             line.removeFromSuperlayer()
         }
@@ -57,7 +57,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
     }
     
     /// 回撤
-    public func undo() {
+    open func undo() {
         if !lines.isEmpty {
             let line = lines.removeLast()
             line.removeFromSuperlayer()
@@ -66,7 +66,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
     }
     
     /// 还原
-    public func redo() {
+    open func redo() {
         if !undoLines.isEmpty {
             let undoLine = undoLines.removeLast()
             self.layer.addSublayer(undoLine)
@@ -75,7 +75,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
     }
     
     /// 导出为图片
-    public func exportToImage() -> UIImage? {
+    open func exportToImage() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
             layer.render(in: context)
@@ -85,7 +85,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
         return image
     }
     
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let startPoint = touches.first?.location(in: self) else {
             return
         }
@@ -109,7 +109,7 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
         lines.append(shapeLayer)
     }
     
-    public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let movedPoint = touches.first?.location(in: self) else {
             return
         }
@@ -117,13 +117,13 @@ public class FXDrawView: UIView, FXSketchpadProtocol {
         self.lineLayer?.path = self.path?.cgPath
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         setBackgroundImage()
     }
     
     // MARK: - private
-    private func setBackgroundImage() {
+    open func setBackgroundImage() {
         guard let image = backgroundImage else { return }
         UIGraphicsBeginImageContext(bounds.size)
         let context = UIGraphicsGetCurrentContext()
